@@ -3,6 +3,9 @@ voir
 
 Tools for viewing data
 
+## Table of contents
+* [histogram.R](#histogramr)
+
 ### histogram.R
 #### Usage
 ```
