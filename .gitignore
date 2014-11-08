@@ -10,5 +10,6 @@
 # RStudio files
 .Rproj.user/
 
-# OS X system files
+# System files
 .DS_Store
+*~
