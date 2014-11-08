@@ -3,8 +3,8 @@ voir
 
 Tools for viewing data
 
-## histogram.R
-### Usage
+### histogram.R
+#### Usage
 ```
 usage: histogram.R <file>
 
@@ -16,7 +16,7 @@ positional arguments:
   file               File of numerical values, one per line.
 ```
 
-### Example
+#### Example
 ```
 histogram.R insert_size.txt
 ```
