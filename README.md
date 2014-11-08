@@ -20,4 +20,4 @@ positional arguments:
 ```
 histogram.R insert_size.txt
 ```
-![Example histogram](figures/example_histogram.png?raw=true "Example histogram")
+![Example histogram](examples/figures/insert_size.txt.png?raw=true "Example histogram")
