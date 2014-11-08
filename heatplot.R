@@ -3,11 +3,11 @@
 # print usage
 usage <- function() {
 	cat(
-'usage: heatmap.R <file>
+'usage: heatplot.R <file>
 
-heatmap.R
+heatplot.R
 author: Colby Chiang (cc2qe@virginia.edu)
-description: Plot a heatmap from two columns of numbers
+description: Plot a heat plot from two columns of numbers
 
 positional arguments:
   file               File with two columns of numerical values,

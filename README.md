@@ -6,7 +6,7 @@ Scripts for quickly generating standard plots from the command line.
 ## Table of contents
 * [histogram.R](#histogramr)
 * [scatter.R](#scatterr)
-* [heatmap.R](#heatmapr)
+* [heatplot.R](#heatplotr)
 
 ### histogram.R
 
@@ -45,13 +45,13 @@ scatter.R two_col.txt
 ```
 ![Example scatter plot](examples/figures/two_col.txt.png?raw=true "Example scatter plot")
 
-### heatmap.R
+### heatplot.R
 
-Plot a heatmap from two columns of numbers
+Plot a heat plot from two columns of numbers
 
 #### Usage
 ```
-usage: heatmap.R <file>
+usage: heatplot.R <file>
 
 positional arguments:
   file               File with two columns of numerical values,
@@ -60,6 +60,6 @@ positional arguments:
 
 #### Example
 ```
-heatmap.R two_col.txt
+heatplot.R two_col.txt
 ```
-![Example heatmap](examples/figures/two_col.txt.heat.png?raw=true "Example heatmap")
+![Example heat plot](examples/figures/two_col.txt.heat.png?raw=true "Example heat plot")
