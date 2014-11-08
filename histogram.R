@@ -27,5 +27,6 @@ if (is.na(file)) {
 x <- as.numeric(scan(file))
 
 pdf(paste0(basename(args[1]), '.pdf'), height=4, width=5)
+# png(paste0(basename(args[1]), '.png'), height=4, width=5, units='in', res=150)
 hist(x, col='steelblue3', breaks=50, main=paste0('Histogram of ', args[1]), xlab=args[1])
 dev.off()
