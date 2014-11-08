@@ -30,5 +30,6 @@ x <- matrix(scan(file, what='raw', sep='\t'), byrow=TRUE, ncol=2)
 
 # pdf(paste0(basename(args[1]), '.pdf'), height=5, width=5)
 png(paste0(basename(args[1]), '.png'), height=5, width=5, units='in', res=150)
-plot(x[,1], x[,2], main=paste0('Histogram of ', filename), xlab=paste(filename, 1), ylab=paste(filename, 2))
+par(mar=c(4,4,1,1))
+plot(x[,1], x[,2], xlab=paste(filename, 1), ylab=paste(filename, 2))
 dev.off()
