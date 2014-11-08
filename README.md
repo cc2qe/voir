@@ -1,7 +1,7 @@
 voir
 ====
 
-Tools for viewing data
+Scripts for quickly generating standard plots from the command line.
 
 ## Table of contents
 * [histogram.R](#histogramr)
