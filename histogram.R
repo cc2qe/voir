@@ -17,6 +17,7 @@ positional arguments:
 # Draw a histogram from a text file
 args <- commandArgs(trailingOnly=TRUE)
 file <- args[1]
+filename <- basename(args[1])
 
 # Check input args
 if (is.na(file)) {
@@ -26,7 +27,7 @@ if (is.na(file)) {
 
 x <- as.numeric(scan(file))
 
-pdf(paste0(basename(args[1]), '.pdf'), height=4, width=5)
-# png(paste0(basename(args[1]), '.png'), height=4, width=5, units='in', res=150)
-hist(x, col='steelblue3', breaks=50, main=paste0('Histogram of ', args[1]), xlab=args[1])
+# pdf(paste0(filename, '.pdf'), height=4, width=5)
+png(paste0(filename, '.png'), height=4, width=5, units='in', res=150)
+hist(x, col='steelblue3', breaks=50, main=paste0('Histogram of ', filename), xlab=filename)
 dev.off()
