@@ -25,7 +25,7 @@ positional arguments:
 ```
 histogram.R insert_size.txt
 ```
-![Example histogram](./examples/figures/insert_size.txt.png?raw=true =200)
+![Example histogram](./examples/figures/insert_size.txt.png?raw=true =200x)
 
 ### scatter.R
 
