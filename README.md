@@ -7,6 +7,7 @@ Scripts for quickly generating standard plots from the command line.
 * [histogram.R](#histogramr)
 * [scatter.R](#scatterr)
 * [heatscatter.R](#heatscatterr)
+* [heatcontour.R](#heatcontourr)
 
 ### histogram.R
 
