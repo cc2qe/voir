@@ -3,11 +3,11 @@
 # print usage
 usage <- function() {
 	cat(
-'usage: heatplot.R <file>
+'usage: heatscatter.R <file>
 
-heatplot.R
+heatscatter.R
 author: Colby Chiang (cc2qe@virginia.edu)
-description: Plot a heat plot from two columns of numbers
+description: Plot a heat scatter plot from two columns of numbers
 
 positional arguments:
   file               File with two columns of numerical values,
@@ -37,7 +37,7 @@ df$dens <- col2rgb(x)[1,] + 1L
 
 ## Map densities to colors
 cols <-  colorRampPalette(c("#000099", "#00FEFF", "#45FE4F", 
-                            "#FCFF00", "#FF9400", "#FF3100"))(256)
+                            "#FCFF00", "#FF9400", "#FF3100", "#9B0000"))(256)
 df$col <- cols[df$dens]
 
 ## Plot it, reordering rows so that densest points are plotted on top

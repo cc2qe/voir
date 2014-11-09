@@ -6,7 +6,7 @@ Scripts for quickly generating standard plots from the command line.
 ## Table of contents
 * [histogram.R](#histogramr)
 * [scatter.R](#scatterr)
-* [heatplot.R](#heatplotr)
+* [heatscatter.R](#heatscatterr)
 
 ### histogram.R
 
@@ -45,13 +45,13 @@ scatter.R two_col.txt
 ```
 ![Example scatter plot](examples/figures/two_col.txt.png?raw=true "Example scatter plot")
 
-### heatplot.R
+### heatscatter.R
 
-Plot a heat plot from two columns of numbers
+Plot a heat scatter plot from two columns of numbers
 
 #### Usage
 ```
-usage: heatplot.R <file>
+usage: heatscatter.R <file>
 
 positional arguments:
   file               File with two columns of numerical values,
@@ -60,6 +60,25 @@ positional arguments:
 
 #### Example
 ```
-heatplot.R two_col.txt
+heatscatter.R two_col.txt
 ```
-![Example heat plot](examples/figures/two_col.txt.heat.png?raw=true "Example heat plot")
+![Example heat scatter plot](examples/figures/two_col.txt.heatscatter.png?raw=true "Example heat scatter plot")
+
+### heatcontour.R
+
+Plot a heat contour plot from two columns of numbers
+
+#### Usage
+```
+usage: heatcontour.R <file>
+
+positional arguments:
+  file               File with two columns of numerical values,
+                       tab-delimited.
+```
+
+#### Example
+```
+heatcontour.R two_col.txt
+```
+![Example heat contour plot](examples/figures/two_col.txt.heatcontour.png?raw=true "Example heat contour plot")
