@@ -17,8 +17,7 @@ positional arguments:
 
 # Draw a histogram from a text file
 args <- commandArgs(trailingOnly=TRUE)
-# file <- args[1]
-file <- '/Users/cc2qe/code/voir/examples/two_col.txt'
+file <- args[1]
 filename <- basename(file)
 
 # Check input args

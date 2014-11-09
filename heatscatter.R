@@ -18,7 +18,7 @@ positional arguments:
 # Draw a histogram from a text file
 args <- commandArgs(trailingOnly=TRUE)
 file <- args[1]
-filename <- basename(args[1])
+filename <- basename(file)
 
 # Check input args
 if (is.na(file)) {
@@ -44,5 +44,5 @@ df$col <- cols[df$dens]
 # pdf(paste0(basename(args[1]), '.pdf'), height=5, width=5)
 png(paste0(basename(args[1]), '.png'), height=5, width=5, units='in', res=150)
 par(mar=c(4,4,1,1))
-plot(x1~x2, data=df[order(df$dens),], pch=20, col=col, cex=1.5, xlab=paste(filename, 1), ylab=paste(filename, 2))
+plot(x2~x1, data=df[order(df$dens),], pch=20, col=col, cex=1.5, xlab=paste(filename, 1), ylab=paste(filename, 2))
 dev.off()
