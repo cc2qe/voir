@@ -45,7 +45,7 @@ x1.seq <- seq(min(x1), max(x1), diff(range(x1))/res)
 x2.seq <- seq(min(x2), max(x2), diff(range(x2))/res)
 
 ## Fit loess function to grid
-df.loess <-  loess(dens ~ x1 * x2, data = df, degree = 1, span = 0.25)
+df.loess <-  loess(dens ~ x1 * x2, data = df, degree = 1, span = 0.2)
 df.fit <-  expand.grid(list(x1 = x1.seq, x2 = x2.seq))
 z <-  predict(df.loess, newdata = df.fit)
 
