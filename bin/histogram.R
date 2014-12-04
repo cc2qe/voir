@@ -27,8 +27,8 @@ if (is.na(file)) {
 
 x <- as.numeric(scan(file))
 
-# pdf(paste0(filename, '.pdf'), height=4, width=5)
-png(paste0(filename, '.png'), height=4, width=5, units='in', res=150)
+pdf(paste0(filename, '.pdf'), height=4, width=5)
+## png(paste0(filename, '.png'), height=4, width=5, units='in', res=150)
 par(mar=c(4,4,1,1))
 hist(x, col='steelblue3', main='', breaks=50, xlab=filename)
 dev.off()
