@@ -41,5 +41,5 @@ class(x) <- 'numeric'
 # calculate mad
 q <- ecdf(x)(x)
 
-cat(x, sep='\n')
+cat(q, sep='\n')
 
