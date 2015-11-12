@@ -3,11 +3,11 @@
 # print usage
 usage <- function() {
 	cat(
-'usage: mad.R <file>
+'usage: quantiles.R <file>
 
-mad.R
-author: Colby Chiang (cc2qe@virginia.edu)
-description: calculate median absolute deviation from a column of numbers
+quantiles.R
+author: Colby Chiang (colbychiang@wustl.edu)
+description: convert a column of numbers into quantile values
 
 positional arguments:
   file               File with one column of numerical values [stdin]
@@ -39,9 +39,7 @@ x <- matrix(scan(file, what='raw', sep='\t', quiet=TRUE), byrow=TRUE, ncol=1)
 class(x) <- 'numeric'
 
 # calculate mad
-med <- median(x[,1])
-mad <- mad(x[,1])
+q <- ecdf(x)(x)
 
-cat(med, mad, sep='\t')
-cat('\n')
+cat(x, sep='\n')
 
